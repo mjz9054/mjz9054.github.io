@@ -4,6 +4,8 @@ date: 2020-09-07 23:04:55
 tags: [Hexo, maupassant]
 ---
 
+本文是在 Mac 系统下，搭建 Hexo 支持的博客系统，事先需要安装好`Ruby`和`npm`相关依赖。
+
 ## 1. 安装 `hexo`, 并初始化项目
 ### 假设项目名称为`blog`
 ```shell
@@ -32,9 +34,12 @@ $ npm install hexo-renderer-sass --save
 
 > self_search - A jQuery-based local search engine, with the dependency on the plugin hexo-generator-search
 
+
 ## 3. 主题自定义
 
 ### 3.1 禁用部分页面，目前还未添加相应的页面，可以先禁用
+理论上，应用完主题之后就可以正常访问博客了，但由于部分页面未提供，这里先注释这一部分
+
 ```YAML
 # - page: about
 #   directory: about/
@@ -107,6 +112,7 @@ post_asset_folder: true
 
 
 ## 5. 文章发布
+
 #### 步骤1： 修改项目配置文件`_config.yml`，配置上自己GitHub的地址
 ```YMAL
 deploy:
@@ -115,6 +121,7 @@ deploy:
   branch: master
 ```
 `repository`可以配置`https`，也可以配置`ssh`的地址
+
 #### 步骤2： 安装 hexo-deployer-git 插件
 自动部署需要`hexo-deployer-git`插件的帮助，否则不能自动找到`Git`
 ```sh
@@ -133,6 +140,7 @@ hexo server # 或简写 hexo s
 
 
 ## 6. 源文件管理
+
 #### Git 配置
 ```sh
 $ git init 
@@ -141,6 +149,7 @@ $ git remote -v
 origin	git@github.com:mjz9054/mjz9054.github.io.git (fetch)
 origin	git@github.com:mjz9054/mjz9054.github.io.git (push)
 ```
+
 #### 创建分支
 将源文件放置在分支上，`master`用于静态文件的存放.
 分支`gh-pages`是 GitHub pages 的 tutorial 中提到的存放源文件的分支名，可以使用这个名字也可以不使用，自己能明白新建分支的意义即可。
