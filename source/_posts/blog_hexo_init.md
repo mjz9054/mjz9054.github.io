@@ -106,9 +106,34 @@ post_asset_folder: true
 当然，手动创建该文件夹也可以。
 
 
+## 5. 文章发布
+#### 步骤1： 修改项目配置文件`_config.yml`，配置上自己GitHub的地址
+```YMAL
+deploy:
+  type: git
+  repository: git@github.com:mjz9054/mjz9054.github.io.git
+  branch: master
+```
+`repository`可以配置`https`，也可以配置`ssh`的地址
+#### 步骤2： 安装 hexo-deployer-git 插件
+自动部署需要`hexo-deployer-git`插件的帮助，否则不能自动找到`Git`
+```sh
+$ npm i hexo-deployer-git
+```
+相关命令：
+发布文章至GitHub
+```sh
+hexo deploy # 或简写 hexo d
+```
+本地预览
+```sh
+hexo server # 或简写 hexo s 
+```
+执行命令后，可以访问 [localhost:4000](localhost:4000)，进行预览
 
-## 5. Git 管理
 
+## 6. 源文件管理
+#### Git 配置
 ```sh
 $ git init 
 $ git remote add origin git@github.com:mjz9054/mjz9054.github.io.git
@@ -116,6 +141,17 @@ $ git remote -v
 origin	git@github.com:mjz9054/mjz9054.github.io.git (fetch)
 origin	git@github.com:mjz9054/mjz9054.github.io.git (push)
 ```
+#### 创建分支
+将源文件放置在分支上，`master`用于静态文件的存放.
+分支`gh-pages`是 GitHub pages 的 tutorial 中提到的存放源文件的分支名，可以使用这个名字也可以不使用，自己能明白新建分支的意义即可。
+```sh
+$ git checkout --orphan gh-pages
+```
 
+#### 将文件推送至分支
+```sh
+$ git push --set-upstream origin gh-pages
+```
+需要在远端创建分支，需要加上额外参数，之后的推送就不需要了。
 
 

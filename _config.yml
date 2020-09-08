@@ -104,4 +104,6 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:mjz9054/mjz9054.github.io.git
+  branch: master
