@@ -164,7 +164,7 @@ $ git push --set-upstream origin gh-pages
 需要在远端创建分支，需要加上额外参数，之后的推送就不需要了。
 
 ## 7. 其他
-#### Hexo tag plugin
+### Hexo tag plugin
 > https://hexo.io/docs/tag-plugins.html
 
 #### Examples
