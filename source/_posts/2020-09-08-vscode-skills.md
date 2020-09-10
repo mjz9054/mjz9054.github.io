@@ -1,5 +1,5 @@
 ---
-title: vscode_skills
+title: vscode skills
 date: 2020-09-08 19:08:59
 tags: ['vscode']
 ---
