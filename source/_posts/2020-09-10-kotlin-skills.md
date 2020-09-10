@@ -119,10 +119,12 @@ True.toInt()
     val name = "Jack"
 
     val result = name.apply {
-        println(length + 1)
+        plus("a") // 返回了新的值，并没有改变原来的 name。除非再赋值给name = plus("a") 才会影响，但 result 不会改变
+        println(length + 1) // 5
     }
 
-    println(result)
+    println(result) // “Jack”
+    println(name) // 如果是 name = plus("a),则 name = "Jacka"，如果没有重新赋值，则name的值不变
 ```
 
 ### 3.5 with
@@ -136,5 +138,5 @@ True.toInt()
         name = "Rose"
         gender = "female"
     }
-    println(person)
+    println(person) // Person(name=Rose, gender=female)
 ```
