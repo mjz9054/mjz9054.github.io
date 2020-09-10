@@ -1,7 +1,7 @@
 ---
-title: kotlin_skills
+title: Kotlin skills
 date: 2020-09-10 09:02:48
-tags:
+tags: [Kotlin, Functional]
 ---
 
 
@@ -64,7 +64,7 @@ True.toInt()
 ## 3. let, run, also, apply, with 的使用
 ### 3.1 let
 `let` 最后一行是`let`代码块的返回值，如果最后一行是一个值，则`let`有返回值，否则是一个`Unit`，即无返回值
-{% codeblock %}
+```kotlin
     val name = "Jack"
 
     val a = name.let {
@@ -77,13 +77,13 @@ True.toInt()
         print("xyz")
     }
     // Unit
-{% endcodeblock %}
+```
 
 `let`的代码块里带有一个内置的`it`实例，代表调用`let`代码块的实例本身
 
 ### 3.2 run
 `run` 和 `let` 类似，不过没有了`it`，可以再代码块里直接访问实例本身的属性，同样最后一行是返回值
-{% codeblock lang:kotlin %}
+```kotlin
     val name = "Jack"
 
     val a = name.run {
@@ -96,12 +96,12 @@ True.toInt()
         print("xyz")
     }
     // Unit
-{% endcodeblock %}
+```
 
 
 ### 3.3 also
 `also`和`let`类似，只不过不需要指定返回，默认返回实例本身，所以多数情况下`let`和`also`可以相互替换。 `also`同样含有`it`指向调用实例本身
-{% codeblock lang:kotlin %}
+```kotlin
     val count = 10
 
     val result = count.also {
@@ -110,12 +110,12 @@ True.toInt()
     }
 
     println(result) // result = 10
-{% endcodeblock %}
+```
 
 
 ### 3.4 apply
 `apply`和`run`类似，无需指定返回值，相比于`also`, `apply`可以直接使用实例的属性；相比于`run`，无需指定返回值
-{% codeblock lang:kotlin %}
+```kotlin
     val name = "Jack"
 
     val result = name.apply {
@@ -123,11 +123,11 @@ True.toInt()
     }
 
     println(result)
-{% endcodeblock %}
+```
 
 ### 3.5 with
 `with`用于改变实例的属性，而无需使用`.`来调用
-{% codeblock lang:kotlin %}
+```kotlin
     data class Person(var name: String, var gender: String)
 
     val person = Person("Jack", "male")
@@ -137,4 +137,4 @@ True.toInt()
         gender = "female"
     }
     println(person)
-{% endcodeblock %}
+```
