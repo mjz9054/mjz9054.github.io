@@ -110,7 +110,7 @@ post_asset_folder: true
 这样在创建通过命令`hexo new blog_name`时，会在`_post`目录下生成`blog_name.md`和`blog_name`文件夹，可以将图片放置在`blog_name` 目录下。
 当然，手动创建该文件夹也可以。
 
-注意：hexo 的图片最终渲染出来的路径与source里的路径有些不一直，会造成在markdown里能预览，但是在网页中不能预览的情况，可以使用`hexo-assert-image`插件来辅助解决。
+注意：hexo 的图片最终渲染出来的路径与source里的路径有些不一致，会造成在markdown里能预览，但是在网页中不能预览的情况，可以使用`hexo-assert-image`插件来辅助解决，或者求其次仅保证在网页端可以预览。
 
 
 ## 5. 文章发布
