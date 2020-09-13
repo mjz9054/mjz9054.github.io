@@ -1,5 +1,5 @@
 ---
-title: Kotlin skills
+title: Kotlin Skills
 date: 2020-09-10 09:02:48
 tags: [Kotlin, Functional]
 ---
