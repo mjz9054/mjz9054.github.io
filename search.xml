@@ -4,7 +4,26 @@
   
     
     <entry>
-      <title>Kotlin skills</title>
+      <title>Sublime Skills</title>
+      <link href="/2020/09/13/sublime-skills/"/>
+      <url>/2020/09/13/sublime-skills/</url>
+      
+        <content type="html"><![CDATA[<h4 id="多行编辑"><a href="#多行编辑" class="headerlink" title="多行编辑"></a>多行编辑</h4><h4 id="相同内容选中"><a href="#相同内容选中" class="headerlink" title="相同内容选中"></a>相同内容选中</h4><h4 id="重复行去除"><a href="#重复行去除" class="headerlink" title="重复行去除"></a>重复行去除</h4><h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><h4 id="依次选中相同内容"><a href="#依次选中相同内容" class="headerlink" title="依次选中相同内容"></a>依次选中相同内容</h4><h4 id="前后行交换位置"><a href="#前后行交换位置" class="headerlink" title="前后行交换位置"></a>前后行交换位置</h4><h4 id="复制当前行至新的一行"><a href="#复制当前行至新的一行" class="headerlink" title="复制当前行至新的一行"></a>复制当前行至新的一行</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> sublime </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Kotlin Skills</title>
       <link href="/2020/09/10/kotlin-skills/"/>
       <url>/2020/09/10/kotlin-skills/</url>
       
@@ -29,7 +48,7 @@
       <link href="/2020/09/09/idea-skills/"/>
       <url>/2020/09/09/idea-skills/</url>
       
-        <content type="html"><![CDATA[<h2 id="1-IDEA-剪切板"><a href="#1-IDEA-剪切板" class="headerlink" title="1. IDEA 剪切板"></a>1. IDEA 剪切板</h2><p>快捷键<code>command + shift + v</code>, 可以查看 idea 剪切板的近 100 条记录</p><h2 id="2-快速命名新建的对象"><a href="#2-快速命名新建的对象" class="headerlink" title="2. 快速命名新建的对象"></a>2. 快速命名新建的对象</h2><p>在新创建的对象后面添加<code>.val</code>，然后点击<code>Tab</code>或者<code>Command</code>，能够弹出新建变量的选项，有助于快速命名变量<br><img src="/images/idea_skill_val.gif"></p><p>快捷键 <code>option + command + v</code> ，<br><img src="/images/idea_keymap_ocv.gif"></p><h2 id="3-live-template"><a href="#3-live-template" class="headerlink" title="3. live template"></a>3. live template</h2><h2 id="4-Extract"><a href="#4-Extract" class="headerlink" title="4. Extract"></a>4. Extract</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-IDEA-剪切板"><a href="#1-IDEA-剪切板" class="headerlink" title="1. IDEA 剪切板"></a>1. IDEA 剪切板</h2><p>快捷键<code>command + shift + v</code>, 可以查看 idea 剪切板的近 100 条记录</p><h2 id="2-快速命名新建的变量"><a href="#2-快速命名新建的变量" class="headerlink" title="2. 快速命名新建的变量"></a>2. 快速命名新建的变量</h2><h3 id="方式1：-val-或者-var"><a href="#方式1：-val-或者-var" class="headerlink" title="方式1： .val 或者 .var"></a>方式1： .val 或者 .var</h3><p>在新创建的对象后面添加<code>.val</code> or <code>.var</code>，然后点击<code>Tab</code>或者<code>Command</code>，能够弹出新建变量的选项，有助于快速命名变量<br><img src="/images/idea_skill_val.gif"></p><ul><li>对于<code>.val</code>，在<code>Java</code>工程中，需要结合<code>lombok</code>使用；而在<code>kotlin</code>项目中，因为<code>kotlin</code>语言有<code>.val</code>来声明一个不会改变的变量，则会生成<code>val xx = xxx</code>形式的代码；</li><li>对于<code>.var</code>，在<code>Java</code>工程中，生成<code>对象 + 变量名</code>的形式；在<code>kotlin</code>中，则是<code>var xx = xxx</code>的形式。</li><li>总的来说，在<code>Java</code>工程中，<code>.var</code>更实用，而在<code>kotlin</code>工程中，<code>val</code>和<code>var</code>都比较实用，具体看想要声明的变量是否为可变化的，不可变，则使用<code>.val</code>，可变，则使用<code>.var</code>。</li></ul><h3 id="方式2：快捷键"><a href="#方式2：快捷键" class="headerlink" title="方式2：快捷键"></a>方式2：快捷键</h3><p><code>option + command + v</code> ，<br><img src="/images/idea_keymap_ocv.gif"></p><h2 id="3-live-template"><a href="#3-live-template" class="headerlink" title="3. live template"></a>3. live template</h2><h2 id="4-快速选择相同内容，并启动多区域编辑"><a href="#4-快速选择相同内容，并启动多区域编辑" class="headerlink" title="4. 快速选择相同内容，并启动多区域编辑"></a>4. 快速选择相同内容，并启动多区域编辑</h2><p>当单个代码文件中有多个相同地方需要修改时，可以使用快捷键<code>control + command + g</code><br><img src="/images/idea_skill_same_text_edit.gif"></p><h2 id="5-将内容放在一行"><a href="#5-将内容放在一行" class="headerlink" title="5. 将内容放在一行"></a>5. 将内容放在一行</h2><p>当想把多行内容放在一行中显示时，可以使用快捷键 <code>control + shift + j</code><br><img src="/images/idea_skill_one_line.gif"></p><h2 id="6-打印变量时指定变量名称"><a href="#6-打印变量时指定变量名称" class="headerlink" title="6. 打印变量时指定变量名称"></a>6. 打印变量时指定变量名称</h2><p>在代码调试的时候，常会遇到打印出某个变量的场景，如果打印的时候不给变量起名字或者指定文本，在控制台不容易定位到打印的信息，而手动去写有时并不方便，此时可以使用<code>soutv</code>，然后按下<code>tab</code>，就会自动选择要打印的变量，并填写好前缀。<br><img src="/images/idea_skill_print_variable.gif"></p><p><code>soutv</code>其实是<code>IDEA</code>内置的一个<code>live tempalte</code>，通过添加自定义的 template ，可以提升编码的效率。</p>]]></content>
       
       
       
@@ -44,7 +63,7 @@
     
     
     <entry>
-      <title>vscode skills</title>
+      <title>Visual Studio Skills</title>
       <link href="/2020/09/08/vscode-skills/"/>
       <url>/2020/09/08/vscode-skills/</url>
       
