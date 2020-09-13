@@ -30,3 +30,9 @@ tags: [idea]
 当想把多行内容放在一行中显示时，可以使用快捷键 `control + shift + j`
 ![](/images/idea_skill_one_line.gif)
 
+## 6. 打印变量时指定变量名称
+在代码调试的时候，常会遇到打印出某个变量的场景，如果打印的时候不给变量起名字或者指定文本，在控制台不容易定位到打印的信息，而手动去写有时并不方便，此时可以使用`soutv`，然后按下`tab`，就会自动选择要打印的变量，并填写好前缀。
+![](/images/idea_skill_print_variable.gif)
+
+`soutv`其实是`IDEA`内置的一个`live tempalte`，通过添加自定义的 template ，可以提升编码的效率。
+
