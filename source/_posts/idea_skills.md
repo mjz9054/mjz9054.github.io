@@ -22,10 +22,11 @@ tags: [idea]
 
 ## 3. live template
 
-## 4. 快速选择相同内容，并启动多内容编辑
+## 4. 快速选择相同内容，并启动多区域编辑
+当单个代码文件中有多个相同地方需要修改时，可以使用快捷键`control + command + g`
+![](/images/idea_skill_same_text_edit.gif)
 
 ## 5. 将内容放在一行
-
-## 选中相同内容，多光标编辑（多行编辑）
-
+当想把多行内容放在一行中显示时，可以使用快捷键 `control + shift + j`
+![](/images/idea_skill_one_line.gif)
 
