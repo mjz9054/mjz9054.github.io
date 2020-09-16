@@ -36,3 +36,8 @@ tags: [idea]
 
 `soutv`其实是`IDEA`内置的一个`live tempalte`，通过添加自定义的 template ，可以提升编码的效率。
 
+## 7. 快速定位到编译错误的位置
+`F2` 定位到下一个错误
+
+`Shift + F2` 定位到上一个错误
+

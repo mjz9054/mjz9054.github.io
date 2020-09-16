@@ -20,6 +20,15 @@ $ git checkout -b dev origin/dev
 $ git checkout -b dev
 ```
 
+#### 查看 project 有多少个分支
+```sh
+$ git branch -a // --all 本地和远程的所有分支
+$ git branch -r // --remote 远程的所有分支
+$ git branch -l // --list 本地所有分支
+$ git branch -v // --verbose 本地分支（输出最后一次提交信息）
+```
+
+
 #### MyISAM 与 InnoDB 对 B+ 树的不同使用
 MyISAM 和 InnoDB 的索引都是使用 B+ 树的数据结构实现的。
 MyISAM 索引和数据是不同的，可以理解为不同类型的数据，而InnoDB的索引也是数据，和具体数据无差。
