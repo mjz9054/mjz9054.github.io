@@ -89,6 +89,43 @@ setUp(
 ```
 
 ### 逻辑判断
+[`Conditional statements`](https://gatling.io/docs/current/general/scenario/#conditional-statements)
+#### doIf
+```JAVA
+doIf("${myBoolean}") {
+  // executed if the session value stored in "myBoolean" is true
+  exec(http("...").get("..."))
+}
+
+```
+使用：当 `Session` 中的 `tokenId` 为空时，打印出 `Session`
+```JAVA
+doIf(session => session("tokenId").asOption[String].isEmpty) {
+  exec { session =>
+    println("Smoke process - Login", session)
+    session
+  }
+}
+```
+
+#### doIfEquals
+```JAVA
+doIfEquals("${actualValue}", "expectedValue") {
+  // executed if the session value stored in "actualValue" is equal to "expectedValue"
+  exec(http("...").get("..."))
+}
+```
+
+#### doIfOrElse
+```JAVA
+doIfOrElse(session => session("myKey").as[String].startsWith("admin")) {
+  // executed if the session value stored in "myKey" starts with "admin"
+  exec(http("if true").get("..."))
+} {
+  // executed if the session value stored in "myKey" does not start with "admin"
+  exec(http("if false").get("..."))
+}
+```
 
 
 ## Gatling 报告分析
