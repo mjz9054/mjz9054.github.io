@@ -154,8 +154,8 @@ doIfOrElse(session => session("myKey").as[String].startsWith("admin")) {
 ## 监控工具
 在做性能测试的时候，监控是不能少的。
 
-### Sleuth
-用来追溯请求在各个服务之间的流转。每个请求有唯一的traceId，在不同的服务之间也会有不同的spanId，这些信息可以帮助查看请求在整个链路中的调用以及耗时情况。
+### Sleuth (Spring Cloud Sleuth)
+[`Sleuth`](https://spring.io/projects/spring-cloud-sleuth)用来追溯请求在各个服务之间的流转。每个请求有唯一的traceId，在不同的服务之间也会有不同的spanId，这些信息可以帮助查看请求在整个链路中的调用以及耗时情况。
 
 ### Zipkin
 [`Zipkin`](https://zipkin.io/)和`Sleuth`搭配使用，是将`Sleuth`上报的链路信息可视化。
@@ -163,8 +163,8 @@ doIfOrElse(session => session("myKey").as[String].startsWith("admin")) {
 ![](/images/gatling_zipkin_preview.png)
 
 ### Prometheus
-如果项目时部署在 k8s 之上，则可以使用`Prometheus`来监控 pod 上的资源使用情况，还能够统计分析 pod 处理的请求。
+[`Prometheus`](https://prometheus.io/)用来监控 pod 上的资源使用情况，还能够统计分析 pod 处理的请求。
 
 ### Grafana
-`Grafana`是将`Prometheus`统计的信息可视化。
+[`Grafana`](https://grafana.com/)是将`Prometheus`统计的信息可视化。
 ![](/images/gatling_grafana_preview.png)
