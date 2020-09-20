@@ -130,12 +130,41 @@ doIfOrElse(session => session("myKey").as[String].startsWith("admin")) {
 
 ## Gatling 报告分析
 ### 响应时间分布柱状图
+统计请求响应时间分布以及失败请求的数量
+![](/images/gatling_requests_response_time_preview.png)
+
 ### 各请求响应图表
-### active users
+统计各个API的响应时间，例如：50%，75%，95%，99% 的请求在多少ms内完成。
+![](/images/gatling_requests_response_time_statistic.png)
+
+### Active users
+在测试期间，各时间点上，活跃的用户数统计
+![](/images/gatling_active_users.png)
+
 ### 详细响应时间分布
+测试过程中，请求的响应时间分布情况
+![](/images/gatling_response_time_distribution.png)
+
+### Active users 与 响应时间 对照
+`Active users` 和 响应时间 的详细对照
+![](/images/gatling_active_users_response_distribution.png)
+
 
 
 ## 监控工具
-### sleuth
-### zipkin
+在做性能测试的时候，监控是不能少的。
+
+### Sleuth
+用来追溯请求在各个服务之间的流转。每个请求有唯一的traceId，在不同的服务之间也会有不同的spanId，这些信息可以帮助查看请求在整个链路中的调用以及耗时情况。
+
+### Zipkin
+[`Zipkin`](https://zipkin.io/)和`Sleuth`搭配使用，是将`Sleuth`上报的链路信息可视化。
+
+![](/images/gatling_zipkin_preview.png)
+
 ### Prometheus
+如果项目时部署在 k8s 之上，则可以使用`Prometheus`来监控 pod 上的资源使用情况，还能够统计分析 pod 处理的请求。
+
+### Grafana
+`Grafana`是将`Prometheus`统计的信息可视化。
+![](/images/gatling_grafana_preview.png)
