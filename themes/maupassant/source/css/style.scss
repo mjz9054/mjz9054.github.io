@@ -299,9 +299,11 @@ div {
             margin: 0 0 1.234em;
             word-break: break-word;
             overflow-wrap: break-word;
+            line-height: 27px;
+            font-size: 16px;
             code {
                 display: inline-block;
-                margin: 0 5px;
+                margin: 1px 5px;
                 padding: 0 5px;
                 border-radius: 4px;
                 background: #e6e6e6;
@@ -970,6 +972,7 @@ screen and (min-width: 48em) {
 figure.highlight,
 .codeblock {
     background: #e4e4e4;
+    border-radius: 4px;
     margin: 10px 0;
     line-height: 1.1em;
     color: #333;
@@ -1018,7 +1021,7 @@ figure.highlight,
     // Gutter which contains line numbers
     .gutter {
         // background: #ebefee;
-        border-right: 1px solid #e6e6e6;
+        border-right: 1px solid #cacaca;
         padding: 0.3em 15px;
         user-select: none;
     }
