@@ -8,6 +8,8 @@ tags: [Vim]
 
 这里并没有囊括所有的指令或者完整的`Vim`使用技巧，而是做一下简单记录，方便用到的时候查找。
 
+<!--more-->
+
 ### Vim 键盘图
 ![](https://www.runoob.com/wp-content/uploads/2015/10/vi-vim-cheat-sheet-sch.gif)
 
