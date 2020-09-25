@@ -1,7 +1,7 @@
 ---
-title: skills_note
+title: Skills Note
 date: 2020-09-20 18:52:32
-tags:
+tags: [Git, Vim, Spring]
 ---
 
 ## Git
