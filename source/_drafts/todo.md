@@ -4,10 +4,6 @@ date: 2020-09-14 09:27:10
 tags:
 ---
 
-#### Vim
-#### Xpath
-[`Xpath`](https://www.freeformatter.com/xpath-tester.html#ad-output)
-
 #### Unit test 不同jar包，注解等的不同之处
 #### log4j
 
