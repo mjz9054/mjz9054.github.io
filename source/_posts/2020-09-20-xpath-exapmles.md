@@ -4,9 +4,7 @@ date: 2020-09-20 19:00:20
 tags:
 ---
 
-
-# XPath
-在上面的站点上 [`XPath Tester / Evaluator`](https://www.freeformatter.com/xpath-tester.html#ad-output) 可以测试编写的 `XPath`，该站点还有 `XPath` 的语法参考。以下罗列的例子来自改站点。
+前一段时间在写 [MountBank](http://www.mbtest.org/) 相关的 Predicates 的时候，用到了`XPath`的语法，有些语法模仿已有的 case 可以很好的完成，但有些特殊一点的 case 就需要自己思考如何实现。在网上搜索的时候看到了[`XPath Tester / Evaluator`](https://www.freeformatter.com/xpath-tester.html#ad-output)这个站点，可以用来测试`XPath`的语句，也有一些`XPath`的语法参考。
 
 1. Select the document node
 ```XPath
