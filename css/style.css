@@ -22,8 +22,8 @@ textarea,
   font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important; }
 
 body {
-  background-color: #FFF;
-  color: #444;
+  background-color: #F9F9F9;
+  color: #111;
   font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -240,12 +240,15 @@ div {
     .post .post-content p {
       margin: 0 0 1.234em;
       word-break: break-word;
-      overflow-wrap: break-word; }
+      overflow-wrap: break-word;
+      line-height: 27px;
+      font-size: 16px; }
       .post .post-content p code {
         display: inline-block;
-        margin: 0 5px;
+        margin: 1px 5px;
         padding: 0 5px;
-        background: #f7f8f8;
+        border-radius: 4px;
+        background: #e6e6e6;
         font-family: Menlo, Consolas, monospace !important; }
       .post .post-content p a {
         color: #01579f;
@@ -789,7 +792,8 @@ pre {
 /* syntax highlight*/
 figure.highlight,
 .codeblock {
-  background: #f7f8f8;
+  background: #e4e4e4;
+  border-radius: 4px;
   margin: 10px 0;
   line-height: 1.1em;
   color: #333;
@@ -834,8 +838,7 @@ figure.highlight,
       color: #01579f; }
   figure.highlight .gutter,
   .codeblock .gutter {
-    background: #f7f8f8;
-    border-right: 1px solid #e6e6e6;
+    border-right: 1px solid #cacaca;
     padding: 0.3em 15px;
     user-select: none; }
   figure.highlight .code,
