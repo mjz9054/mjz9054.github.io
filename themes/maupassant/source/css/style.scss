@@ -969,7 +969,7 @@ screen and (min-width: 48em) {
 
 figure.highlight,
 .codeblock {
-    background: #f7f8f8;
+    background: #e4e4e4;
     margin: 10px 0;
     line-height: 1.1em;
     color: #333;
@@ -1017,7 +1017,7 @@ figure.highlight,
     }
     // Gutter which contains line numbers
     .gutter {
-        background: #f7f8f8;
+        // background: #ebefee;
         border-right: 1px solid #e6e6e6;
         padding: 0.3em 15px;
         user-select: none;
