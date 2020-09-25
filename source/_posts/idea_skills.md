@@ -41,3 +41,12 @@ tags: [idea]
 
 `Shift + F2` 定位到上一个错误
 
+
+## 8. 每次仅 run 单个单元测试case
+当 idea 里打开的是一个 gradle 项目时，默认在run tests 时，使用的是 gradle，这个时候它不能通过点击 idea 侧边的run按钮来仅run当前的case，每次会将当前单元测试类里的所有case都跑一遍。
+在 `Preferences` -> `Build,Execution,Deployment` -> `Build Tools` -> `Gradle` -> `Run tests using` 将其改为 `IntelliJ IDEA`，就能够 run 某个 case。
+
+![](/images/idea_skill_run_single_unit_test_case.png)
+
+也可以选择 `Choose per test`, 启用后，在每次run时会提示选择用那种方式去run当前的case。
+
