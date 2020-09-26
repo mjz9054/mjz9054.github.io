@@ -7,7 +7,12 @@ tags:
 #### Unit test 不同jar包，注解等的不同之处
 `assertj`, `junit`, `nhaarman`
 `@ExtendWith`,`MockitoExtension`,`SpringExtension`
+`org.junit.Test`,`org.junit.jupiter.api.Test`
+`org.junit.Test`
+`org.junit.jupiter.api.Test` : 是Junit5 提供的注解，
 
+
+[JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 #### log4j
 
 
