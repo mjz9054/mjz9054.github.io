@@ -8,7 +8,7 @@ tags: [JUnit5, JUnit]
 
 <!--more-->
 
-### JUnit 5
+## JUnit 5
 
 `JUnit5`是由多个模块组成的。
 
@@ -22,7 +22,7 @@ tags: [JUnit5, JUnit]
 
 [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 
-### `org.junit.Test` 与 `org.junit.jupiter.api.Test`
+## org.junit.Test 与 org.junit.jupiter.api.Test
 
 `org.junit.Test` 是 JUnit5 之前所使用的注解，来自于`JUnit Vintage`口快。`org.junit.jupiter.api.Test` 是 JUnit5 新增的注解，来源于`JUnit Jupiter`模块。
 
@@ -54,7 +54,7 @@ testImplementation("org.springframework.boot:spring-boot-starter-test") {
 }
 ```
 
-### @ExtendWith
+## @ExtendWith
 
 `@ExtendWith` 是 `@RunWith`的进化。
 
