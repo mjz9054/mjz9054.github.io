@@ -12,7 +12,7 @@ tags: [idea]
 快捷键`command + shift + v`, 可以查看 idea 剪切板的近 100 条记录
 
 ## 2. 快速命名新建的变量
-### 方式1： .val 或者 .var
+### 方式1： `.val` 或者 `.var`
 在新创建的对象后面添加`.val` or `.var`，然后点击`Tab`或者`Command`，能够弹出新建变量的选项，有助于快速命名变量
 ![](/images/idea/idea_skill_val.gif)
 
@@ -24,7 +24,7 @@ tags: [idea]
 
 ### 3. 方式2：快捷键 
 `option + command + v` ，
-![](/images/idea/idea_keymap_ocv.gif)
+![](/images/idea/idea_skill_keymap_ocv.gif)
 
 ## 4. Live Templates
 `IDEA`的`Live Templates`可以快速生成指定模板的代码。`IDEA`已经内置了一些 template，例如 参数的打印，参数是否为空的判断等，通过对应输入对应的缩写（abbreviation）,然后`Enter`或者`Tab`来生成所需的代码。
