@@ -8,11 +8,15 @@ tags:
 `assertj`, `junit`, `nhaarman`
 `@ExtendWith`,`MockitoExtension`,`SpringExtension`
 `org.junit.Test`,`org.junit.jupiter.api.Test`
-`org.junit.Test`
-`org.junit.jupiter.api.Test` : 是Junit5 提供的注解，
+`org.junit.Test`: 是来自 JUnit3, JUint4 的注解。如果项目中引入的是 JUnit5，而不需要要用到 JUint4 的时候，可以从依赖里面排除这个包。
+`org.junit.jupiter.api.Test` : 是 Junit5 提供的注解。
+
+
+
 
 
 [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
+
 #### log4j
 
 
