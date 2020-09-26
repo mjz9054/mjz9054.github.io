@@ -10,7 +10,7 @@ tags: [JUnit5, JUnit]
 
 ### JUnit 5
 
-  `JUnit5`是由多个模块组成的。
+`JUnit5`是由多个模块组成的。
 > JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
 
 `JUnit Platform`是测试框架在 JVM 上启动的基础。它还定义了`TestEngine`的API，可以用来开发基于 Platform 的测试框架。
@@ -18,6 +18,8 @@ tags: [JUnit5, JUnit]
 `JUnit Jupiter`是`JUnit5`中用来编写测试以及扩展的编程模型及扩展模型的集合。`Jupiter`的子项目还提供了运行`Jupiter`测试的`TestEngine`。
 
 `JUnit Vintage`提供兼容以往基于`JUnit3`, `JUint4`版本的测试引擎。
+
+[JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 
 ### @ExtendWith
 
