@@ -22,6 +22,38 @@ tags: [JUnit5, JUnit]
 
 [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 
+### `org.junit.Test` 与 `org.junit.jupiter.api.Test`
+
+`org.junit.Test` 是 JUnit5 之前所使用的注解，来自于`JUnit Vintage`口快。`org.junit.jupiter.api.Test` 是 JUnit5 新增的注解，来源于`JUnit Jupiter`模块。
+
+如果项目使用的是Junit5 的来进行单元测试，那么为了避免在编写单元测试时产生疑惑或者不必要的选择，可以排除`JUnit Vintage`，还可以排除`junit:junit`。
+
+以下是排除方法，并没有实际测试，待验证。
+```XML
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+    <exclusions>
+        <exclusion>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+        </exclusion>
+        <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+```
+
+```Gradle
+testImplementation("org.springframework.boot:spring-boot-starter-test") {
+    exclude("org.junit.vintage:junit-vintage-engine")
+    exclude("junit:junit")
+}
+```
+
 ### @ExtendWith
 
 `@ExtendWith` 是 `@RunWith`的进化。
