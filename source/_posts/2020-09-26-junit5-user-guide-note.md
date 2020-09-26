@@ -22,9 +22,9 @@ tags: [JUnit5, JUnit]
 
 [JUnit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 
-## org.junit.Test 与 org.junit.jupiter.api.Test
+## org.junit.jupiter.api.Test 与 org.junit.Test
 
-`org.junit.Test` 是 JUnit5 之前所使用的注解，来自于`JUnit Vintage`口快。`org.junit.jupiter.api.Test` 是 JUnit5 新增的注解，来源于`JUnit Jupiter`模块。
+`org.junit.Test` 是 JUnit5 之前所使用的注解，来自于`JUnit Vintage`模块。`org.junit.jupiter.api.Test` 是 JUnit5 新增的注解，来源于`JUnit Jupiter`模块。
 
 如果项目使用的是Junit5 的来进行单元测试，那么为了避免在编写单元测试时产生疑惑或者不必要的选择，可以排除`JUnit Vintage`，还可以排除`junit:junit`。
 
