@@ -15,10 +15,18 @@ tags:
 
 #### 读书
 
+#### Gradle
+
+#### Jenkins
+
 #### 语言
 英语
 日语
 粤语
+
+### An Exception
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "xxx url" cannot retry due to server authentication, in streaming mode; nested exception is java.net.HttpRetryException: cannot retry due to server authentication
+
 
 
 #### MyISAM 与 InnoDB 对 B+ 树的不同使用
