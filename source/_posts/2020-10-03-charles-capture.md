@@ -53,4 +53,8 @@ tags: [Charles, Capture]
 
 经过以上设置之后，就可以在 Charles 里解析到 HTTPS 的请求及响应。
 
+
+注意：移动端如果开启了 VPN， 代理设置无效，就不能抓包，关闭 VPN 即可。
+
+
 参考：[史上最强 Charles 抓包](https://juejin.im/post/6844903640272994317#heading-3)
