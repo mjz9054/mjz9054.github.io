@@ -4,6 +4,8 @@ date: 2020-10-03 09:45:49
 tags: [Charles, Capture]
 ---
 
+![](/images/charles/charles_launch.png)
+
 在进行 App 的开发过程中，时常需要通过抓包来帮助定位问题。通过抓包，可以了解到请求体，响应体，header， 耗时等等信息。这里记录下用 Charles 抓取 App 数据的过程。
 
 <!--more--> 
@@ -16,6 +18,8 @@ tags: [Charles, Capture]
 
 ### Proxy 设置
 
+![](/images/charles/charles_proxy_setting.png)
+
 设置 Charles 为代理服务器后，通过抓取到流经代理服务器的数据，来分析相应的请求。
 
 启动 Charles 后，在 `Proxy` -> `Proxy Setting` 里设置代理服务器的参数，例如：端口号，默认不需要进行过多的设置。
@@ -23,6 +27,8 @@ tags: [Charles, Capture]
 在 Proxy Setting 也可以直接开启 `Mac OS Proxy`。开启之后，就可以抓取本机上的网络请求。
 
 ### 抓取 App 网络请求
+
+![](/images/charles/charles_local_address.png)
 
 首先在 `Charles` -> `Help` -> `Local Address` 查看代理服务器的地址；
 
@@ -38,11 +44,18 @@ tags: [Charles, Capture]
 
 下载完成之后，证书会显示在`描述文件`里， 点击安装证书；
 
+![](/images/charles/charles_cert_setting2.png)
+
+
 安装之后，需要在 `通用`-> `关于本机` -> `证书信任设置` 里信任证书。
+
+![](/images/charles/charles_cert_setting1.png)
 
 不同版本的 iOS 可能略有不同，仅供参考。
 
 ### 开启 SSL Proxying
+
+![](/images/charles/charles_ssl_proxy_setting.png)
 
 手机端安装完成证书之后，还需要在 Charles 里开启 `SSL Proxying`。
 
