@@ -22,6 +22,14 @@ tags:
 #### Python
 用Python，爬取一些数据，做下可视化分析
 
+#### helm
+
+#### Postman practise
+
+#### 前后端API加密
+https://juejin.im/post/6844903616122355725
+https://www.cnblogs.com/huanzi-qch/p/10913636.html
+
 #### 语言
 英语
 日语
