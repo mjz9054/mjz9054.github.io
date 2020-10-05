@@ -4,6 +4,9 @@ date: 2020-09-26 13:28:43
 tags: [JUnit5, JUnit]
 ---
 
+![](/images/junit/junit_user_guide.jpeg)
+
+
 在项目里使用JUnit写单元测试的时候，时常遇到一个注解在不同的包里都定义了，例如`@Test`可能来自于`org.junit.Test`，也可能来自于`org.junit.jupiter.api.Test`。有时候总是有些迷惑，在查看了JUnit5的用户文档以及其他关于JUnit5的介绍之后，有了一些理解，这里记录一下，加深印象。
 
 <!--more-->
