@@ -22,6 +22,8 @@ tags:
 #### Python
 用Python，爬取一些数据，做下可视化分析
 
+#### Scala
+
 #### helm
 
 #### Postman practise
