@@ -40,6 +40,7 @@ https://www.cnblogs.com/huanzi-qch/p/10913636.html
 英语
 日语
 粤语
+韩语
 
 ### An Exception
 org.springframework.web.client.ResourceAccessException: I/O error on POST request for "xxx url" cannot retry due to server authentication, in streaming mode; nested exception is java.net.HttpRetryException: cannot retry due to server authentication
