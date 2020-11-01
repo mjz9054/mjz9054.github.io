@@ -42,6 +42,12 @@ https://www.cnblogs.com/huanzi-qch/p/10913636.html
 粤语
 韩语
 
+#### mapstruct
+Java bean Mappings
+
+#### Jenkins
+是否可以为各个平台出一套Jenkins的配置或者服务，这样以后的项目是否就不用从头搭建，做到开箱即用。
+
 ### An Exception
 org.springframework.web.client.ResourceAccessException: I/O error on POST request for "xxx url" cannot retry due to server authentication, in streaming mode; nested exception is java.net.HttpRetryException: cannot retry due to server authentication
 
