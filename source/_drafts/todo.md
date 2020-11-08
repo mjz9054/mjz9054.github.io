@@ -51,6 +51,11 @@ Java bean Mappings
 ### An Exception
 org.springframework.web.client.ResourceAccessException: I/O error on POST request for "xxx url" cannot retry due to server authentication, in streaming mode; nested exception is java.net.HttpRetryException: cannot retry due to server authentication
 
+### gradle download failed
+create a new gradle project. failed when build or sync because of downloading gradle file spent a lot of time. 
+how to rebuild or sync.
+    gradle init
+    then press the sync buttion on the top right in gradle console 
 
 
 #### MyISAM 与 InnoDB 对 B+ 树的不同使用
