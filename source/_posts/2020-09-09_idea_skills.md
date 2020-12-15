@@ -78,3 +78,87 @@ tags: [idea]
 ![](/images/idea/idea_skill_run_single_unit_test_case.png)
 
 也可以选择 `Choose per test`, 启用后，在每次run时会提示选择用那种方式去run当前的case。
+
+---
+# IDEA 使用分享
+
+### Find in actions
+
+- find shortcuts
+    - About
+    - Reformat code
+    - Rename 
+    - Update Project
+    - Commit
+    - Recent Tests
+    - ...
+- find settings
+
+### Useful Actions
+| action | shortcut | note |
+| - | - | - |
+| Project | Command + 1 | Show/hide project window | 
+| Paste from history | Shift + Command + V | clipboard |
+| Split Horizontally | - | - |
+| Split Vertically | - | - |
+| Split and move donw | - | - |
+| Split and move left | - | - |
+| Start New Line | Shift + Command + Enter |
+| Start New Line Before Current Line | Option + Command + Enter | 
+| Collapse |
+| Jump to Source | F4 / Command + Down / Commant + left click |
+| Open Blank Diff Window | - | Compare different files | 
+| Complate Current Statement | Shift + Command + Enter | complete `;` `,`...|
+| Column Selection Mode | Shift + Command + 8 | for multiple lines edit |
+| Select All Occurrences | Control + Command + G | Select all occurrences and edit |
+
+#### Find/Location
+| action | shortcut | note |
+| - | - | - |
+| Search anywhere | Double Shift | popup searh window | 
+| Find in path | Shift + Command + F | find something by keyword in different path |
+| Find classes | Command + O | all classes |
+| Find files | Shift + Command + O | all files |
+| Find symbols | Optin + Command + O | files/method/variable |
+
+
+#### Navigation
+| action | shortcut | note |
+| - | - | - |
+| Next Method | - | 
+| Previous Method | - | 
+| Super Method | 
+| File Structure | Command + F12 | display members like variables and methods in the file |
+| Line/Column | Command + L | go to the specific location of file | 
+| Last Edit Location | Shift + Command + Backspace | - |
+| Recent Files / Recent Changed Files  | Command + E |
+| Recent Locations / Recent Changeds Locations | Shift + Command + E |
+| Back | Command + [ / Option + Shift + Left | back to last caret Location |
+| Forward | Command + ] /  Option + Shift + Right | Forwart to next caret Location | 
+| Next Highlight Error | F2 | 
+| Previous Highlight Error | Shift + F2 |
+
+
+#### Git
+| action | shortcut | note |
+| - | - | - |
+| Update Project | Command + T | pull |
+| Commit changes | Command + K | display the changed files and commit |
+| Push Commits | Shift + Command + K | diaplay the commits and push |
+| Stash Changes | - | Stash Changes |
+| Unstash Changes | - | Unstash Changes | 
+| Show history | - | - |
+| Local history | - | - |
+
+
+#### Refactoring
+| action | shortcut | note |
+| - | - | - |
+| Rename | 
+| Extract Method | Option + Command + M |
+| Extract Variable | Option + Command + V |
+| Extract Constant | Option + Commmand + C |
+| Extract Parameter | Option + Command + P / .val / .var |
+
+#### live template
+#### open http requests collection
